@@ -1,0 +1,21 @@
+algorithm,execution_time,dataset,triangle_operations,triangles
+Node Iterator,14.605739116668701,CA-HepPh.csv,30795430,3358499
+Node Iterator,7.669528245925903,CA_AstroPh.csv,25901092,1351441
+Node Iterator,442.7571551799774,com-youtube.csv,2954940368,3056386
+Node Iterator,0.9631779193878174,deezer_europe_edges.csv,3002410,45034
+Node Iterator,52.74590468406677,Email-EuAll.csv,391879617,267313
+Node Iterator,39.320542335510254,git_edges.csv,254912550,523810
+Node Iterator,2875.083477497101,large_twitch_edges.csv,17691869508,54148895
+Node Iterator,6.037440776824951,lastfm_asia_edges.csv,1413772,40433
+Node Iterator,5.271445035934448,musae_facebook_edges.csv,20877277,794953
+Node Iterator,26.50624990463257,soc_Epinions.csv,149213720,1624481
+Compact Forward,5.215604782104492,CA-HepPh.csv,4336273,3358499
+Compact Forward,4.134703636169434,CA_AstroPh.csv,3823456,1351441
+Compact Forward,324.05537724494934,com-youtube.csv,41261274,3056386
+Compact Forward,0.7617027759552002,deezer_europe_edges.csv,345276,45034
+Compact Forward,26.96718668937683,Email-EuAll.csv,2559843,267313
+Compact Forward,32.29766488075256,git_edges.csv,5121859,523810
+Compact Forward,2473.3472254276276,large_twitch_edges.csv,653011214,54148892
+Compact Forward,5.869384050369263,lastfm_asia_edges.csv,134407,40433
+Compact Forward,2.875606060028076,musae_facebook_edges.csv,2408172,794953
+Compact Forward,17.619544506072998,soc_Epinions.csv,12285935,1228571

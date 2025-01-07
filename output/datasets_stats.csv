@@ -1,0 +1,11 @@
+dataset,nodes,edges,density,diameter,triangles
+CA-HepPh.csv,12008,118521,0.002,13,3358499
+CA_AstroPh.csv,18772,198110,0.001,14,1351441
+com-youtube.csv,1134890,2987624,,20,3056386
+deezer_europe_edges.csv,28281,92752,0.0002,21,45034
+Email-EuAll.csv,265214,420045,0.00001,14,267313
+git_edges.csv,37700,289003,0.0004,11,523810
+large_twitch_edges.csv,168114,6797557,0.0005,,54148895
+lastfm_asia_edges.csv,7624,27806,0.001,15,40433
+musae_facebook_edges.csv,22470,171002,0.001,,794953
+soc_Epinions.csv,75879,405740,0.0001,14,1624481
