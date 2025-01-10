@@ -149,10 +149,3 @@ class Triest:
                 self.update_counters(u,v,'+')
         estimation = self.estimate_triangles()
         return estimation
-
-df = pd.read_csv('../input/lastfm_asia_edges.csv', delimiter=',')
-# graph = nx.from_pandas_edgelist(df, 'node_1', 'node_2')
-tr = Triest(1000)
-result = tr.run(tr, df)
-print(result)
-# print(len(tr))
