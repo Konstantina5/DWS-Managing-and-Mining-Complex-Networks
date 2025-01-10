@@ -8,6 +8,7 @@ from networkx import NetworkXError
 from algorithms.compact_forward import CompactForward
 from algorithms.doulion import Doulion
 from algorithms.node_iterator import NodeIterator
+from algorithms.triest import Triest
 
 directory = 'input/'
 
@@ -102,6 +103,35 @@ def run_doulion():
     doulion_results.to_csv('output/doulion_results.csv', sep=',', index=False)
 
 
+def run_triest():
+    triest_results = pd.DataFrame(columns=['algorithm', 'execution_time', 'dataset', 'Global Triangle Estimation','Local Triangle Estimation', 'initial_graph_triangles'])
+    
+    for filepath in sorted(Path(directory).iterdir()):
+        if filepath.is_file():
+            file_name = filepath.name
+
+            try:
+              print(file_name)
+              df = pd.read_csv(filepath, delimiter=',')
+
+              tr = Triest(1000000)
+              start_time = time.time()
+              estimation = tr.run(tr,df)
+              end_time = time.time()
+
+              global_est = estimation['global']
+              local_est = estimation['local']
+
+              triest_results.loc[len(triest_results.index)] = ['Triest', (end_time - start_time), file_name, global_est, local_est, 0]
+
+            except KeyError as e:
+                print(f"Skipping dataset {file_name} due to KeyError: {e}")
+                continue  # Move to the next dataset
+
+
+
+
 store_dataset_properties()
 run_algorithms()
 run_doulion()
+run_triest()
