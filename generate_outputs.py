@@ -123,10 +123,11 @@ def run_triest():
               local_est = estimation['local']
 
               triest_results.loc[len(triest_results.index)] = ['Triest', (end_time - start_time), file_name, global_est, local_est, 0]
-
             except KeyError as e:
                 print(f"Skipping dataset {file_name} due to KeyError: {e}")
                 continue  # Move to the next dataset
+
+    triest_results.to_csv('output/triest_results.csv', sep=',', index=False)
 
 
 
